@@ -1,0 +1,18 @@
+
+<%= stylesheet_link_tag 'styles.css'%>
+<div id="header">
+<h1 class="headertext"> New Cuffers</h1>
+</div>
+<div class="sob">
+
+</div>
+<div class="sob">
+
+<h2 class="inn"> <%= @cuffer.number%></h2>
+<h2 class="inn"> <%= @cuffer.name%></h2>
+<div id="cuffmess">
+</div>
+<a class="link" href="<%=cuffers_url%>">cuffers</a>
+</div>
+<%= javascript_include_tag("cuff.js")%>
+

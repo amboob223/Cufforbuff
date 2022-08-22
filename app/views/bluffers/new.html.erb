@@ -1,0 +1,15 @@
+
+<%= stylesheet_link_tag 'styles.css'%>
+<div class="newhead">
+<h1 class="headertext"> Bluff'em</h1>
+</div>
+
+<form class="form" action="/bluffers" method="POST">
+    <div>
+    <input type="text" name="bluffer[name]"> Name
+    </div>
+    
+    <input type="text" name="bluffer[number]"> Phone
+    <input type="submit" value="create a bluffer"><a class="close" href="<%=bluffers_url %>">go to bluffers</a>
+</form>
+

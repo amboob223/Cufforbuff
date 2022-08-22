@@ -1,0 +1,31 @@
+
+<%= stylesheet_link_tag 'application.css'%>
+<div id="header">
+<h1 class="headertext">the bluffers</h1>
+<button class="mainbtn">
+<a href="<%= new_bluffer_url%>"class="link">New Bluffer</a>
+</button>
+<button class="mainbtn">
+    <a href="<%=cuffers_url%>" class="link">Back to cuffers</a>
+</button>
+
+</div>
+<div class="pop">
+<div class="listc">
+<ul>
+<% @bluffers.each do |bluffer| %>
+    <a class="close" href="/bluffers/<%=bluffer.id%>">
+    <li><%= bluffer.name%></a></li>
+    <li><%= bluffer.number %></li>
+<form action="<%=bluffer_url(bluffer)%>" method="POST">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" value="unbluff">
+</form>
+
+<%end%>
+</ul>
+<a href="<%= cuffers_url %>">back to cuffers</a>  
+</div>  
+
+</div>
+

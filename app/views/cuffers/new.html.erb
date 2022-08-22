@@ -1,0 +1,15 @@
+<%= stylesheet_link_tag 'styles.css' %>
+<div class="newHead">
+<h1 class="headertext">who's getting cuffed</h1>
+</div>
+
+<form class="form" action="/cuffers" method ="POST">
+    <div>
+    <input type="text" name= "cuffer[name]"> Name
+    </div>
+    
+    <input type="text" name= "cuffer[number]"> Phone<!-- for it to work we had to put that csfr in the action controller and make that name tag in the inoput you see-->
+    <input type="submit" value= "create a cuffer"> <a class="close" href="<%=cuffers_url%>">back</a>
+   
+</form>
+

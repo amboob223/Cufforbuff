@@ -1,0 +1,19 @@
+<%= stylesheet_link_tag 'styles.css'%>
+<div id="header">
+<h1 class="headertext">This Bluffer here</h1>
+</div>
+<div class="sob">
+<h2 class="inn"> <%=@bluffer.name%></h2>
+<h2 class="inn"> <%= @bluffer.number%></h2>
+<div id="bluffmess">
+
+</div>
+ <a class="link" href="<%=bluffers_url%>"%>BlufferIndex </a>
+</div>
+
+
+   <%=javascript_include_tag("bluff.js")%>
+   
+    
+    
+    
